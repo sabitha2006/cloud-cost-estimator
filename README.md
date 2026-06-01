@@ -7,6 +7,7 @@ Cloud Cost Estimator is a web-based application that helps users estimate AWS cl
 ## Features
 
 * Multiple AWS services
+
 * Monthly cost calculation
 * Yearly cost calculation
 * User-friendly interface
