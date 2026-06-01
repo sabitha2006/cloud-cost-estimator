@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Cost Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>☁️ Cloud Cost Estimator</h1>
+    <p>Estimate AWS Cloud Service Costs</p>
+
+    <label>Select AWS Service</label>
+    <select id="service">
+        <option value="0.023">Amazon EC2</option>
+        <option value="0.021">Amazon S3</option>
+        <option value="0.025">Amazon RDS</option>
+        <option value="0.0116">AWS Lambda</option>
+        <option value="0.085">CloudFront</option>
+    </select>
+
+    <label>Usage Hours Per Month</label>
+    <input type="number" id="hours" placeholder="Enter usage hours">
+
+    <button onclick="calculateCost()">Calculate Cost</button>
+
+    <div class="result">
+        <h3 id="monthlyCost"></h3>
+        <h3 id="yearlyCost"></h3>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
